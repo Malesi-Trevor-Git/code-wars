@@ -1,18 +1,20 @@
-#include "stdio.h"
-//function definition
-int get_sum(int a,int b);
-int main(){
-    int r=get_sum(5,-1);
-    printf("%d",r);
-}
-int get_sum(int a,int b){
-    int sum;
-    if (a==b){
-        return a;
-    }else{
-        for (int i=a;i<=b;i++){
-            sum+=i;
-        }
+#include <stdio.h>
+int fibonacci(int n)
+{
+    int result = 1, i = 1;
+    if (n <= 1)
+    {
+        return 1;
     }
-    return sum;
+    else
+    {
+        for (i=1; i<=n; i++) {
+            result*=i;
+        }  
+        return result;
+    }
+}
+int main()
+{
+    printf("%d\n", fibonacci(10));
 }
