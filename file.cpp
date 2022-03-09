@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdint>
 int main(){
-  std::cout<<sizeof(long);
+  std::int16_t i{16};
+  std::cout<<i<<'\n';
 }
